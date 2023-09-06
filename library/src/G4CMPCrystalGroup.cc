@@ -211,6 +211,7 @@ G4CMPCrystalGroup::Bravais G4CMPCrystalGroup::Group(const G4String& name) {
   if (name.index("hex")==0) return hexagonal;
   if (name.index("mon")==0) return monoclinic;
   if (name.index("tri")==0) return triclinic;
+	
 
   return UNKNOWN;	// Failure condition; calling code should test
 }
